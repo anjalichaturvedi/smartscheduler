@@ -1,0 +1,273 @@
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: rgb(26, 25, 25);
+    color: white;
+}
+
+.set-pad {
+    padding-top: 35px;
+}
+
+
+.set-row-pad {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.modal {
+    font-family: 'Inter', sans-serif;
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    opacity: 1;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(26, 25, 25); /* Fallback color */
+    background-color: rgb(26, 25, 25); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+
+    position: fixed;
+    top: 25%;
+    left: 35%;
+    background-color: #fff;
+    width: 30%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    text-align: center;
+    font-size: 10px;
+    padding: 2px 16px;
+    background-color: rgb(26, 25, 25);;
+    color: white;
+}
+
+.modal-body {
+    padding: 2px 16px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #FFFFFF;
+    color: white;
+}
+
+
+.logo-custom {
+    max-height: 40px;
+}
+
+#menu {
+    margin-top: 0px;
+    color: #fff;
+}
+/* Add this CSS code to adjust the placement of the navbar elements */
+.navbar-collapse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav li {
+    margin-right: 15px;
+}
+
+/* Add this CSS code for styling the links in the navbar */
+.navbar-nav li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-nav li a:hover {
+    color: #5bc0de;
+}
+
+.navbar-right li a {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.navbar-right li a:hover {
+    color: #d9534f;
+}
+
+/* Remove bullets from the navbar list items */
+.navbar-nav, .navbar-right {
+    padding-left: 0;
+    list-style: none;
+}
+
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {
+        top: 0;
+        opacity: 0
+    }
+    to {
+        top: 25%;
+        opacity: 1
+    }
+}
+
+@keyframes slideIn {
+    from {
+        top: 0;
+        opacity: 0
+    }
+    to {
+        top: 25%;
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #488094;
+    border: none;
+    transition-duration: 0.4s;
+    margin-right: 20px;
+}
+
+button:hover {
+    background-color: #406978;
+}
+
+option {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#footer {
+    margin-top: 210px;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #488094;
+    border: none;
+    transition-duration: 0.4s;
+    margin-bottom: 10px;
+
+}
+
+.btn:hover {
+    background-color: #406978;
+}
+
+label {
+    padding: 5px;
+}
+
+input {
+    margin-top: 20px;
+    padding: 5px;
+    border: 1;
+}
+ 
+.dropdown {
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+}
+
+/* Style the dropdown button */
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style the dropdown menu */
+.dropdown ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Style the dropdown menu items */
+.dropdown ul li {
+    display: block;
+}
+
+/* Style the dropdown menu item links */
+.dropdown ul li a {
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover ul {
+    display: block;
+}
+
+label {
+    color: #000;
+}
